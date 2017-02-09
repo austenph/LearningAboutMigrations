@@ -160,6 +160,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702091519511_InitialCreate.cs" />
+    <Compile Include="Migrations\201702091519511_InitialCreate.Designer.cs">
+      <DependentUpon>201702091519511_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702091538445_AddedTeams.cs" />
+    <Compile Include="Migrations\201702091538445_AddedTeams.Designer.cs">
+      <DependentUpon>201702091538445_AddedTeams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GameScore.cs" />
     <Compile Include="Models\LearningAboutMigrationsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -230,6 +239,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702091519511_InitialCreate.resx">
+      <DependentUpon>201702091519511_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702091538445_AddedTeams.resx">
+      <DependentUpon>201702091538445_AddedTeams.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
